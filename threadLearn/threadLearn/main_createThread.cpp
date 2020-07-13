@@ -38,23 +38,23 @@ public:
 };
 
 
-int main() {
+int main_createThread() {
 
-//     std::thread firstThread(thread_function);
-//     firstThread.detach();
-// 
-//     std::thread secondThread([]()->void{
-//         for (int k = 0; k<5; ++k)
-//         {
-//             std::this_thread::sleep_for(std::chrono::milliseconds(1000));
-//             std::cout << "lambada func thread:" << k << std::endl;
-//         }
-//     });
-//     secondThread.detach();
+    std::thread firstThread(thread_function);
+    firstThread.detach();
+
+    std::thread secondThread([]()->void{
+        for (int k = 0; k<5; ++k)
+        {
+            std::this_thread::sleep_for(std::chrono::milliseconds(1000));
+            std::cout << "lambada func thread:" << k << std::endl;
+        }
+    });
+    secondThread.detach();
 
     A objA;
-//     std::thread thirdThread(objA);
-//     thirdThread.detach();
+    std::thread thirdThread(objA);
+    thirdThread.detach();
 
     std::thread fourthThread(&A::ordinaryFunc,&objA);
     fourthThread.detach();

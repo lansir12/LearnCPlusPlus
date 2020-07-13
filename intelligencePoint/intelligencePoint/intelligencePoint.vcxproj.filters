@@ -15,16 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main02.cpp">
+    <ClCompile Include="shared_ptr.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="main_createThread.cpp">
+    <ClCompile Include="move_rvalue.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="threadParameter.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="referanceParameter.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>

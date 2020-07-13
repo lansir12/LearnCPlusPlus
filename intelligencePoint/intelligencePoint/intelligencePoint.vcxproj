@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{59FB10A8-1801-431F-B218-F8AE11EA205A}</ProjectGuid>
+    <ProjectGuid>{C8571167-6DCA-41B9-8A01-EE53738D7BA3}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>threadLearn</RootNamespace>
+    <RootNamespace>intelligencePoint</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -146,10 +146,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main_createThread.cpp" />
-    <ClCompile Include="referanceParameter.cpp" />
-    <ClCompile Include="threadParameter.cpp" />
-    <ClCompile Include="main02.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="move_rvalue.cpp" />
+    <ClCompile Include="shared_ptr.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
