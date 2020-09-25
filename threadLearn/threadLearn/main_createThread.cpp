@@ -34,12 +34,24 @@ public:
         }
     }
 
+    void prit() {
+        std::cout << "hello" << std::endl;
+    }
+
     
 };
 
 
-int main_createThread() {
+int main() {
+//     A a = A();//创建一个a对象
+//     a.ordinaryFunc();
 
+//     A a;//创建一个a对象
+//     a.ordinaryFunc();
+   // A a();//声明 一个返回A类型的a函数；不是创建a对象！！！
+
+    A()();
+    /*
     std::thread firstThread(thread_function);
     firstThread.detach();
 
@@ -52,9 +64,12 @@ int main_createThread() {
     });
     secondThread.detach();
 
-    A objA;
-    std::thread thirdThread(objA);
+    std::thread thirdThread((A()));
     thirdThread.detach();
+
+    A objA;
+//     std::thread thirdThread(objA);
+//     thirdThread.detach();
 
     std::thread fourthThread(&A::ordinaryFunc,&objA);
     fourthThread.detach();
@@ -68,5 +83,7 @@ int main_createThread() {
     
     int num;
     std::cin >> num;
+
+    */
     return 0;
 }

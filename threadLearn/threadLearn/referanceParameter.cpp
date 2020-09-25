@@ -10,7 +10,7 @@ void threadFun(const int& num)//线程的参数必须为常引用
     numref = 20;
 }
 
-int main()
+int main_www()
 {
     int a = 10;
     std::cout << "main a地址:" << &a << std::endl;
